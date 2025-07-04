@@ -1,0 +1,47 @@
+---
+const personalImageAlt = "fedediaz"
+import Badge from "@/components/Badge.astro"
+import LinkedInIcon from "@/components/icons/LinkedIn.astro"
+import MailIcon from "@/components/icons/Mail.astro"
+import SocialPill from "@/components/SocialPill.astro"
+---
+
+<div class="max-w-xxl">
+  <div class="flex items-center gap-4 mb-4">
+    <img
+      src="/fdev.webp"
+      alt={personalImageAlt}
+      class="w-20 h-20 rounded-full object-cover shadow-lg"
+    />
+    <a
+      href="https://linkedin.com/in/federicodiazzz/"
+      target="_blank"
+      rel="noopener"
+      class="flex items-center transition md:justify-center md:hover:scale-105"
+    >
+      <Badge>Disponible para trabajar</Badge>
+    </a>
+  </div>
+  <h1
+    class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
+  >
+    Hey, soy Fede
+  </h1>
+  <p
+    class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300"
+  >
+    +3 años de experiencia. De momento <strong
+      >Analista Programador Universitario</strong
+    > con residencia en Corrientes, Argentina. Especializado en el desarrollo de paginas web.
+  </p>
+  <nav class="flex flex-wrap gap-4 mt-8">
+    <SocialPill href="mailto:soyfedediazz@gmail.com">
+      <MailIcon class="size-4" />
+      Contáctame
+    </SocialPill>
+    <SocialPill href="https://linkedin.com/in/federicodiazzz/">
+      <LinkedInIcon class="size-4" />
+      LinkedIn
+    </SocialPill>
+  </nav>
+</div>

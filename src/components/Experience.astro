@@ -1,0 +1,37 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCE = [
+  {
+    date: "Actualmente...",
+    title: "Scripts en Python ",
+    company: "Proyecto Personal",
+    description:
+      "Desarrollo de scripts en Python para automatizar tareas repetitivas (descarga de archivos, limpieza de datos, procesamiento de información). \nEntrega de soluciones personalizadas para microemprendedores y estudiantes.",
+    link: "",
+  },
+  {
+    date: "Septiembre 2024",
+    title: "API REST",
+    company: "Proyecto Personal",
+    description:
+      "Creación de una API REST usando Flask en Python. \nImplementación de operaciones CRUD y conexión con base de datos SQL. \nDiseño modular y reutilizable de endpoints.",
+  },
+  {
+    date: "Marzo 2022",
+    title: "Programador Web Junior",
+    company: "Proyecto Académico / Autodidacta",
+    description:
+      "Desarrollo de páginas web simples con HTML5, CSS3 y JavaScript. \nCreación de formularios de contacto funcionales en PHP con validación básica. \nEnvío de datos a correo electrónico o guardado en base de datos (SQL). \nDiseño responsive y buenas prácticas de accesibilidad.",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
