@@ -1,0 +1,77 @@
+/* CSS Plano Footer */
+  .footer {
+    opacity: 0.8;
+    margin: 4rem auto 2.5rem;
+    padding-left: 1rem;
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-container {
+    width: 100%;
+    padding: 1rem 0;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: #292524cc; /* text-zinc-800/90 */
+    font-size: 0.875rem;
+  }
+
+  .footer-copy {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #292524cc;
+  }
+
+  .footer-copy a {
+    text-decoration: none;
+    font-weight: 500;
+    color: inherit;
+  }
+
+  .footer-copy a:hover,
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+
+  .footer-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #292524cc;
+    font-weight: 500;
+  }
+
+  .footer-link {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  /* Dark Mode */
+  @media (prefers-color-scheme: dark) {
+    .footer-copy,
+    .footer-links {
+      color: #e4e4e7e6; /* text-zinc-200/90 */
+    }
+  }
+
+  @media (min-width: 768px) {
+    .footer-container {
+      flex-direction: row;
+    }
+
+    .footer-copy {
+      margin-bottom: 0;
+    }
+  }
+
+
+  

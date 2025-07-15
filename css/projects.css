@@ -1,0 +1,107 @@
+
+/* Proyecto */
+.projects-title {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1f2937; /* gris oscuro */
+}
+
+.title-content {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* Espacio entre ícono y texto */
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+}
+
+.project-card {
+  margin-bottom: 3rem;
+}
+
+.project-inner {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.project-image-container {
+  flex: 1 1 300px;
+  max-width: 500px;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.project-content {
+  flex: 1 1 300px;
+  max-width: 600px;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+  list-style: none;
+  padding: 0;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: 9999px;
+}
+
+.tag-icon {
+  width: 14px;
+  height: 14px;
+}
+
+.project-description {
+  margin: 1rem 0;
+  color: #374151;
+}
+
+.project-footer {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.project-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 9999px;
+  background-color: #e5e7eb;
+  color: #111827;
+  font-size: 0.875rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.project-button:hover {
+  background-color: #2563eb;
+  color: white;
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+}
